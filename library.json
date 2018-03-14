@@ -1,0 +1,19 @@
+{
+	"name": "DLogNet",
+	"keywords": "logging, debug, log, log levels, ESP8266, ESP32",
+	"description": "Network extensions for DLog",
+	"version": "1.0.0",
+	"authors": {
+		"name": "Christopher B. Liebman",
+		"url": "https://github.com/liebman",
+		"maintainer": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/liebman/DLogNet"
+	},
+	"homepage": "https://github.com/liebman/DLogNet/",
+	"frameworks": ["arduino"],
+	"platforms": "*",
+	"examples": "examples/*/*.ino"
+}
