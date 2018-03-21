@@ -2,6 +2,8 @@
 
 Provide various network based writers for DLog
 
+[![Build Status](https://travis-ci.org/liebman/DLog.svg?branch=master)](https://travis-ci.org/liebman/DLogiNet)
+
 ### Implemnented Writers
 
  * `DLogTCPWriter` - sends log lines to remote systems.
