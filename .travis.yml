@@ -46,7 +46,7 @@ before_install:
   - popd
 
   # install libraries needed
-  - install_library https://github.com/liebman/DLogNet.git
+  - install_library https://github.com/liebman/DLog.git
 
   # install the library (DLogNet) from repo
   - install_library
