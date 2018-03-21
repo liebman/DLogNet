@@ -21,6 +21,11 @@ DLogTCPWriter::DLogTCPWriter(const char* host, uint16_t port) : _host(host), _po
 
 DLogTCPWriter::~DLogTCPWriter()
 {
+    if (_client.connected())
+    {
+        dbprintf("closing connection!\n");
+        _client.stop();
+    }
 }
 
 void DLogTCPWriter::write(const char* message)
