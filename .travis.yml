@@ -47,6 +47,7 @@ before_install:
 
   # install libraries needed
   - install_library https://github.com/liebman/DLog.git
+  - install_library https://github.com/arcao/Syslog.git
 
   # install the library (DLogNet) from repo
   - install_library
