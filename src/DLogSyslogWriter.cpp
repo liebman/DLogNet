@@ -8,7 +8,7 @@
 #include <DLogSyslogWriter.h>
 
 DLogSyslogWriter::DLogSyslogWriter(const char* host, uint16_t port, const char* devicename, const char* appname, uint16_t defpri) :
-        _syslog(_udp, host, port, devicename, appname, defpri)
+        _syslog(_udp, host, port, devicename, appname, defpri, SYSLOG_PROTO_BSD)
 {
 }
 
