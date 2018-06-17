@@ -7,7 +7,7 @@
 #endif
 #include "DLog.h"
 #include "DLogPrintWriter.h"
-#include "DLogTCPWriter.h"
+#include "DLogSyslogWriter.h"
 
 #define WIFI_SSID "Your_WiFi_SSID_Here"
 #define WIFI_PASS "Your_WiFi_Password_Here"
@@ -48,7 +48,7 @@ void setup()
     IPAddress ip = WiFi.localIP();
     dlog.info(sTAG, "IP address: %u.%u.%u.%u", ip[0], ip[1], ip[2], ip[3]);
     dlog.info(sTAG, F("starting TCP writer"));
-    dlog.begin(new DLogTCPWriter("192.168.0.42", 1421));
+    dlog.begin(new DLogSyslogWriter("192.168.0.42", 514, "DLlog"));
     dlog.info(sTAG, F("Done"));
 }
 
